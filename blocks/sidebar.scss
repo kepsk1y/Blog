@@ -2,10 +2,31 @@
     width: 300px;
     height: 100vh;
 
-    background-color: red;
-    
+    background-color: $primary;
+
     position: fixed;
     top: 0;
     left: 0;
     z-index: $z-index-sidebar;
+
+    box-shadow: 5px 0 15px rgba(#050505, .1);
+}
+
+.sidebar_header{
+    width: 300px;
+    height: 180px;
+    display: block;
+    object-fit: cover;
+
+    background-color: $secondary;
+}
+
+.sidebar_content{
+    margin-top: -50px;
+}
+
+.sidebar__footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
 }

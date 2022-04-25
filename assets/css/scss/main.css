@@ -3,6 +3,7 @@ body {
   color: #fff;
   font-size: 14px;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: 1.5;
 }
 
 *,
@@ -28,11 +29,30 @@ body {
 .sidebar {
   width: 300px;
   height: 100vh;
-  background-color: red;
+  background-color: #202020;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
+  box-shadow: 5px 0 15px rgba(5, 5, 5, 0.1);
+}
+
+.sidebar_header {
+  width: 300px;
+  height: 180px;
+  display: block;
+  object-fit: cover;
+  background-color: #121212;
+}
+
+.sidebar_content {
+  margin-top: -50px;
+}
+
+.sidebar__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
 .main {
@@ -45,5 +65,89 @@ body {
   margin: 0 auto;
   padding-left: 50px;
   padding-right: 50px;
+}
+
+.profile__avatar {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0, 7px, 20px, rgba(0, 0, 0, 0.25);
+}
+
+.profile__name {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.profile__prof {
+  font-size: 14px;
+  color: #DEDEDE;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+.profile__text {
+  font-size: 12px;
+  color: #fff;
+  line-height: 18px;
+  padding: 30px 30px;
+  margin: 30px 0;
+  text-align: center;
+  border-top: 1px solid #1c1c1c;
+  border-bottom: 1px solid #1c1c1c;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+.social ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.social__item {
+  margin: 0 12px;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  color: #fff;
+  border: 0;
+  text-decoration: none;
+  width: 120px;
+  height: 40px;
+  padding: 13px 25px;
+  border-radius: 25px;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+.btn--blue {
+  background-color: #3137C9;
+  box-shadow: 0 7px 17px -17px rgba(32, 84, 219, 0.2);
+}
+.btn--blue:hover {
+  background-color: #0c1090;
+}
+.btn--red {
+  background-color: #ED3024;
+  box-shadow: 0 7px 17px -17px rgba(242, 63, 63, 0.2);
+}
+.btn--red:hover {
+  background-color: #942a22;
 }
 /*# sourceMappingURL=main.css.map */
