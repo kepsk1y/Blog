@@ -1,0 +1,28 @@
+.search{
+    width: 100%;
+    max-width: 212px;
+    background-color: $primary;
+
+    &:focus{
+        border: none;
+    }
+}
+
+.search__input{
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 12px;
+    color: $white;
+
+    &::placeholer{
+        color: rgba($color: $white, $alpha: .2);
+    }
+}
+
+input {
+    outline:none;
+}
