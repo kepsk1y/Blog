@@ -17,7 +17,8 @@ function watch() {
        server: {
            baseDir: "./",
            googlechrome: '-browser "chrome.exe"'
-       }
+       },
+       port: 8080
    });
    
    gulp.watch('./source/**/*.scss', compile_sass) 

@@ -1,0 +1,32 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+    padding: 0;
+}
+
+.pagination__item{
+    margin: 0 5px;
+    padding: 12px 16px;
+    background-color: #0D0D0D;
+    transition: background-color ease-in-out .3s;
+    border-radius: 3px;
+
+    &:hover{
+        background-color: #104BE3;
+    }
+}
+
+.pagination__link{
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    box-shadow: 0 4px 4px rgba($black, .25);
+    
+    line-height: 30px; 
+    font-size: 14px;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+}
